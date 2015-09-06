@@ -15,7 +15,7 @@ import (
 var (
 	name   = flag.String("n", "", "name of the go project")
 	path   = flag.String("p", "github.com/advincze", "(std)path of the go project, e.g: github.com/name")
-	gistID = flag.String("g", "hw", "predefined project (hw|srv|fileserv) or public gist id to use")
+	gistID = flag.String("g", "hw", "predefined project (hw|srv|fsrv) or public gist id to use")
 )
 
 var gists = []struct {
@@ -24,7 +24,9 @@ var gists = []struct {
 }{
 	{"hw", "5530811"},
 	{"srv", "ed2641eb8470f17b846e"},
-	{"fileserv", "b7be0da8adeebdc97143"},
+	{"fsrv", "b7be0da8adeebdc97143"},
+	{"diyweb", "5ed810218c661b40f5c4"},
+	{"gorilla", "8c48548ce4afd98c4ac2"},
 }
 
 func main() {
